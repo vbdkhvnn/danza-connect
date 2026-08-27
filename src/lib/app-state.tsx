@@ -200,7 +200,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
               body,
               likes: 0,
               comments: 0,
-              tag,
+              ...(tag ? { tag } : {}),
               following: true,
             },
             ...s.feed,
