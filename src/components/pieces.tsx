@@ -140,8 +140,8 @@ export function TimeRow({
 }) {
   return (
     <Link
-      to={to}
-      params={params}
+      to={to as never}
+      params={(params ?? {}) as never}
       className="press flex items-center gap-3.5 px-5 py-3.5 active:bg-secondary/60"
     >
       <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-secondary text-lg">
