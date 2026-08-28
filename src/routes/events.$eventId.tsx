@@ -115,7 +115,7 @@ function EventDetail() {
                   <Avatar
                     initials={i}
                     size="sm"
-                    tint={["tint-blue", "tint-green", "tint-gold", "tint-plum", "tint-teal"][idx % 5]}
+                    tint={["tint-blue", "tint-green", "tint-gold", "tint-plum", "tint-teal"][idx % 5] ?? "tint-plum"}
                   />
                 </span>
               ))}
